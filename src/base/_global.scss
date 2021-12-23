@@ -30,6 +30,11 @@ ul {
   list-style: none;
 }
 
+a {
+  color: $link-color;
+  text-decoration: none;
+}
+
 header,
 main,
 footer {
