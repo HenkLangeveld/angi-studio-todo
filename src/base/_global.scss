@@ -8,11 +8,17 @@
 
 html {
   font-family: "SF-Pro-Text", helvetica, sans-serif;
+  font-weight: 400;
+  color: $text-color;
 }
 
 body {
   min-height: 100vh;
-  padding: 2rem;
+  padding: 2rem 1rem;
+
+  @media (min-width: $breakpoint-1) {
+    padding-top: 65px;
+  }
 }
 
 img {
@@ -22,4 +28,9 @@ img {
 
 ul {
   list-style: none;
+}
+
+.o-wrapper {
+  max-width: 936px;
+  margin-inline: auto;
 }

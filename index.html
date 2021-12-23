@@ -9,218 +9,223 @@
     <link rel="stylesheet" href="./src/base/_fonts.css" />
   </head>
   <body>
-    <header>
-      <div class="logo">
-        <img src="./assets/img/angi-logo.png" alt="logo Angi Studio" />
-      </div>
-      <h1>Job application</h1>
-      <p>
-        This to-do list contains the tasks I need to complete so I can apply to
-        a job well prepared.
-      </p>
-    </header>
-    <main>
-      <h2>New to-do</h2>
-      <form action="">
-        <input type="text" placeholder="Your task..." />
-        <button>Add to-do</button>
-      </form>
-      <h2>Current to-do's</h2>
-      <ul>
-        <li>Reading about Angi studio <input type="checkbox" /></li>
-        <li>Reading about Angi studio <input type="checkbox" /></li>
-      </ul>
-    </main>
-    <footer>
-      <h2>Usefull links</h2>
-      <section class="footer__article-link">
-        <img
-          src="./assets/img/react-photo.jpg"
-          alt="person with headphones behind a computerscreen busy coding"
-        />
-        <h3>ReactJS Development</h3>
-        <p>
-          React makes it painless to create interactive UIs. Design simple views
-          for each state in your application, and react will efficiently...
+    <div class="o-wrapper">
+      <header class="o-main-header">
+        <div class="o-main-header__logo">
+          <img src="./assets/img/angi-logo.png" alt="logo Angi Studio" />
+        </div>
+        <h1 class="o-main-header__title">Job application</h1>
+        <p class="o-main-header__text">
+          This to-do list contains the tasks I need to complete so I can apply
+          to a job well prepared.
         </p>
-        <a href="#">Read more</a>
-      </section>
-      <nav>
-        <section class="footer__nav">
-          <h3>Agencies</h3>
-          <ul>
-            <li>
-              <a href="https://angistudio.com/" target="_blank"
-                >Angi Studio Design</a
-              >
-            </li>
-            <li>
-              <a href="https://angistudio.com/diensten/" target="_blank"
-                >Angi Studio Development</a
-              >
-            </li>
-          </ul>
-          <h3>Development</h3>
-          <ul>
-            <li>
-              <a href="https://stackoverflow.com/" target="_blank"
-                >Stackoverflow</a
-              >
-            </li>
-            <li>
-              <a href="https://css-tricks.com/" target="_blank">CSS Tricks</a>
-            </li>
-            <li>
-              <a href="https://stackexchange.com/" target="_blank"
-                >Stackexchange</a
-              >
-            </li>
-            <li>
-              <a href="https://devhints.io/" target="_blank">Devhints.io</a>
-            </li>
-            <li>
-              <a href="https://www.reddit.com/" target="_blank">Reddit</a>
-            </li>
-          </ul>
+      </header>
+      <main>
+        <h2>New to-do</h2>
+        <form action="">
+          <input type="text" placeholder="Your task..." />
+          <button>Add to-do</button>
+        </form>
+        <h2>Current to-do's</h2>
+        <ul>
+          <li>Reading about Angi studio <input type="checkbox" /></li>
+          <li>Reading about Angi studio <input type="checkbox" /></li>
+          <li>Reading about Angi studio <input type="checkbox" /></li>
+        </ul>
+      </main>
+      <footer>
+        <h2>Usefull links</h2>
+        <section class="footer__article-link">
+          <img
+            src="./assets/img/react-photo.jpg"
+            alt="person with headphones behind a computerscreen busy coding"
+          />
+          <h3>ReactJS Development</h3>
+          <p>
+            React makes it painless to create interactive UIs. Design simple
+            views for each state in your application, and react will
+            efficiently...
+          </p>
+          <a href="#">Read more</a>
         </section>
-        <section class="footer__nav">
-          <h3>Conferenties</h3>
-          <ul>
-            <li>
-              Den Haag
-              <ul>
-                <li>
-                  <a
-                    href="https://www.meetup.com/nl-NL/NL-Agile-at-Scale/events/281791407/"
-                    target="_blank"
-                    >DevOps 41</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="https://www.meetup.com/nl-NL/nlscrum/events/282560345/"
-                    target="_blank"
-                    >UxDf</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="https://www.meetup.com/nl-NL/Master-Digital-Design/events/282587972/"
-                    target="_blank"
-                    >Elm Europe</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="https://www.meetup.com/nl-NL/Dutch-Angular-group/events/xzrxmsyccqbnc/"
-                    target="_blank"
-                    >NG_MY</a
-                  >
-                </li>
-              </ul>
-            </li>
-            <li>
-              Amsterdam
-              <ul>
-                <li>
-                  <a
-                    href="https://www.meetup.com/nl-NL/NL-Agile-at-Scale/events/281791407/"
-                    target="_blank"
-                    >DevOps 41</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="https://www.meetup.com/nl-NL/nlscrum/events/282560345/"
-                    target="_blank"
-                    >UxDf</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="https://www.meetup.com/nl-NL/Master-Digital-Design/events/282587972/"
-                    target="_blank"
-                    >Elm Europe</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="https://www.meetup.com/nl-NL/Dutch-Angular-group/events/xzrxmsyccqbnc/"
-                    target="_blank"
-                    >NG_MY</a
-                  >
-                </li>
-              </ul>
-            </li>
-            <li>
-              Rotterdam
-              <ul>
-                <li>
-                  <a
-                    href="https://www.meetup.com/nl-NL/NL-Agile-at-Scale/events/281791407/"
-                    target="_blank"
-                    >DevOps 41</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="https://www.meetup.com/nl-NL/nlscrum/events/282560345/"
-                    target="_blank"
-                    >UxDf</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="https://www.meetup.com/nl-NL/Master-Digital-Design/events/282587972/"
-                    target="_blank"
-                    >Elm Europe</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="https://www.meetup.com/nl-NL/Dutch-Angular-group/events/xzrxmsyccqbnc/"
-                    target="_blank"
-                    >NG_MY</a
-                  >
-                </li>
-              </ul>
-            </li>
-            <li>
-              Eindhoven
-              <ul>
-                <li>
-                  <a
-                    href="https://www.meetup.com/nl-NL/NL-Agile-at-Scale/events/281791407/"
-                    target="_blank"
-                    >DevOps 41</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="https://www.meetup.com/nl-NL/nlscrum/events/282560345/"
-                    target="_blank"
-                    >UxDf</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="https://www.meetup.com/nl-NL/Master-Digital-Design/events/282587972/"
-                    target="_blank"
-                    >Elm Europe</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="https://www.meetup.com/nl-NL/Dutch-Angular-group/events/xzrxmsyccqbnc/"
-                    target="_blank"
-                    >NG_MY</a
-                  >
-                </li>
-              </ul>
-            </li>
-          </ul>
-        </section>
-      </nav>
-    </footer>
+        <nav>
+          <section class="footer__nav">
+            <h3>Agencies</h3>
+            <ul>
+              <li>
+                <a href="https://angistudio.com/" target="_blank"
+                  >Angi Studio Design</a
+                >
+              </li>
+              <li>
+                <a href="https://angistudio.com/diensten/" target="_blank"
+                  >Angi Studio Development</a
+                >
+              </li>
+            </ul>
+            <h3>Development</h3>
+            <ul>
+              <li>
+                <a href="https://stackoverflow.com/" target="_blank"
+                  >Stackoverflow</a
+                >
+              </li>
+              <li>
+                <a href="https://css-tricks.com/" target="_blank">CSS Tricks</a>
+              </li>
+              <li>
+                <a href="https://stackexchange.com/" target="_blank"
+                  >Stackexchange</a
+                >
+              </li>
+              <li>
+                <a href="https://devhints.io/" target="_blank">Devhints.io</a>
+              </li>
+              <li>
+                <a href="https://www.reddit.com/" target="_blank">Reddit</a>
+              </li>
+            </ul>
+          </section>
+          <section class="footer__nav">
+            <h3>Conferenties</h3>
+            <ul>
+              <li>
+                Den Haag
+                <ul>
+                  <li>
+                    <a
+                      href="https://www.meetup.com/nl-NL/NL-Agile-at-Scale/events/281791407/"
+                      target="_blank"
+                      >DevOps 41</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.meetup.com/nl-NL/nlscrum/events/282560345/"
+                      target="_blank"
+                      >UxDf</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.meetup.com/nl-NL/Master-Digital-Design/events/282587972/"
+                      target="_blank"
+                      >Elm Europe</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.meetup.com/nl-NL/Dutch-Angular-group/events/xzrxmsyccqbnc/"
+                      target="_blank"
+                      >NG_MY</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li>
+                Amsterdam
+                <ul>
+                  <li>
+                    <a
+                      href="https://www.meetup.com/nl-NL/NL-Agile-at-Scale/events/281791407/"
+                      target="_blank"
+                      >DevOps 41</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.meetup.com/nl-NL/nlscrum/events/282560345/"
+                      target="_blank"
+                      >UxDf</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.meetup.com/nl-NL/Master-Digital-Design/events/282587972/"
+                      target="_blank"
+                      >Elm Europe</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.meetup.com/nl-NL/Dutch-Angular-group/events/xzrxmsyccqbnc/"
+                      target="_blank"
+                      >NG_MY</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li>
+                Rotterdam
+                <ul>
+                  <li>
+                    <a
+                      href="https://www.meetup.com/nl-NL/NL-Agile-at-Scale/events/281791407/"
+                      target="_blank"
+                      >DevOps 41</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.meetup.com/nl-NL/nlscrum/events/282560345/"
+                      target="_blank"
+                      >UxDf</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.meetup.com/nl-NL/Master-Digital-Design/events/282587972/"
+                      target="_blank"
+                      >Elm Europe</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.meetup.com/nl-NL/Dutch-Angular-group/events/xzrxmsyccqbnc/"
+                      target="_blank"
+                      >NG_MY</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li>
+                Eindhoven
+                <ul>
+                  <li>
+                    <a
+                      href="https://www.meetup.com/nl-NL/NL-Agile-at-Scale/events/281791407/"
+                      target="_blank"
+                      >DevOps 41</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.meetup.com/nl-NL/nlscrum/events/282560345/"
+                      target="_blank"
+                      >UxDf</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.meetup.com/nl-NL/Master-Digital-Design/events/282587972/"
+                      target="_blank"
+                      >Elm Europe</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.meetup.com/nl-NL/Dutch-Angular-group/events/xzrxmsyccqbnc/"
+                      target="_blank"
+                      >NG_MY</a
+                    >
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </section>
+        </nav>
+      </footer>
+    </div>
+    <!-- o-wrapper -->
   </body>
 </html>
