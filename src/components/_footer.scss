@@ -1,3 +1,14 @@
+footer {
+  li > ul {
+    display: none;
+    transform: scaleY(0);
+  }
+
+  li + li {
+    border-top: 1px solid $border-color;
+  }
+}
+
 .c-footer {
   &__title {
     font-size: 1rem;
@@ -9,6 +20,21 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     column-gap: 1.5rem;
+    font-size: 0.9rem;
+
+    &__title {
+      font-weight: 500;
+      margin-bottom: 5px;
+    }
+
+    &__list {
+      margin-bottom: 20px;
+    }
+
+    &__list-item {
+      color: $link-color;
+      padding-block: 0.75rem;
+    }
   }
 
   &__link {
