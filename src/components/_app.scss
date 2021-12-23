@@ -1,0 +1,73 @@
+.c-app {
+  padding-block: 2rem;
+
+  &__title {
+    font-size: 1rem;
+    font-weight: 600;
+    padding-inline: 1rem;
+  }
+
+  &__form,
+  &__list-item {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-content: center;
+    column-gap: 1.5rem;
+  }
+
+  &__form {
+    margin: 1rem 0 4rem;
+
+    &-input,
+    &-button {
+      font-family: inherit;
+      font-size: 0.9rem;
+    }
+
+    &-input {
+      border: 1px solid $border-color;
+      border-radius: 4px;
+      padding-inline: 1rem;
+      transition: border-color 0.5s;
+
+      &::placeholder {
+        color: $text-color--light;
+      }
+
+      &:hover,
+      &:focus {
+        border: 2px solid $primary-color;
+        outline: none;
+      }
+    }
+  }
+
+  &__list {
+    margin-top: 0.75rem;
+    border: 1px solid $border-color;
+    border-radius: 4px;
+
+    li + li {
+      border-top: 1px solid $border-color;
+    }
+
+    &-item {
+      padding-inline: 1rem;
+      min-height: 51px;
+
+      &__checkbox {
+        appearance: none;
+        width: 1.5rem;
+        height: 1.5rem;
+        border: 1px solid $border-color;
+        border-radius: 50%;
+        transition: border-color 0.3s, background-color 0.3s;
+
+        &:hover {
+          border: 2px solid $done-color;
+          background-color: $done-color--light;
+        }
+      }
+    }
+  }
+}
