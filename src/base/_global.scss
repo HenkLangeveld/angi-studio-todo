@@ -30,6 +30,12 @@ ul {
   list-style: none;
 }
 
+header,
+main,
+footer {
+  padding-block: 2rem;
+}
+
 .o-wrapper {
   max-width: 936px;
   margin-inline: auto;

@@ -1,6 +1,4 @@
 .c-main-header {
-  padding-bottom: calc(2rem + 30px);
-
   &__logo {
     width: 106.3px;
   }
@@ -16,5 +14,6 @@
     font-weight: 300;
     max-width: 36ch;
     margin-top: 1rem;
+    margin-bottom: 30px;
   }
 }
