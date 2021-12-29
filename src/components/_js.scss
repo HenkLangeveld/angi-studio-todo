@@ -1,0 +1,33 @@
+.js-accordion {
+  --rotation: 0;
+  position: relative;
+
+  &::after {
+    content: "\f078";
+    position: absolute;
+    font-family: "Font Awesome 5 Free";
+    font-size: 0.95rem;
+    font-weight: 900;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    color: $expand-color;
+    top: 0.75rem;
+    right: 0.5rem;
+    transform: rotate(var(--rotation));
+    transition: transform 0.3s;
+  }
+
+  &__item {
+    overflow: hidden;
+    max-height: auto;
+    transition: all 0.3s;
+    transform-origin: top;
+  }
+}
+
+.is-collapsed {
+  max-height: 0;
+  transform: scaleY(0);
+}

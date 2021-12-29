@@ -1,9 +1,4 @@
 footer {
-  li > ul {
-    display: none;
-    transform: scaleY(0);
-  }
-
   li + li {
     border-top: 1px solid $border-color;
   }
@@ -32,8 +27,25 @@ footer {
     }
 
     &__list-item {
-      color: $link-color;
-      padding-block: 0.75rem;
+      a {
+        color: $link-color;
+        display: block;
+        padding-block: 0.75rem;
+      }
+    }
+
+    &__sublist {
+      font-size: 0.75rem;
+      border-top: 1px solid $border-color;
+    }
+
+    &__sublist-item {
+      margin-left: 1rem;
+
+      a {
+        padding-block: 0.5rem;
+        color: $sublist-color;
+      }
     }
   }
 
