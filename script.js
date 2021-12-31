@@ -1,8 +1,6 @@
 const subLists = document.querySelectorAll(".js-accordion__control")
 
 function handleAccordionClick() {
-  event.preventDefault();
-
   if(this.style.getPropertyValue('--js-accordionControlPseudoElRotation') === '180deg') {
     this.style.setProperty('--js-accordionControlPseudoElRotation', '0deg');
   } else {
