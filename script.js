@@ -1,12 +1,12 @@
-const subLists = document.querySelectorAll(".js-accordion")
+const subLists = document.querySelectorAll(".js-accordion__control")
 
 function handleAccordionClick() {
   event.preventDefault();
 
-  if(this.style.getPropertyValue('--rotation') === '180deg') {
-    this.style.setProperty('--rotation', '0deg');
+  if(this.style.getPropertyValue('--js-accordionControlPseudoElRotation') === '180deg') {
+    this.style.setProperty('--js-accordionControlPseudoElRotation', '0deg');
   } else {
-    this.style.setProperty('--rotation', '180deg');
+    this.style.setProperty('--js-accordionControlPseudoElRotation', '180deg');
   };
   accordionItem = this.querySelector(".js-accordion__item");
   accordionItem.classList.toggle("is-collapsed")

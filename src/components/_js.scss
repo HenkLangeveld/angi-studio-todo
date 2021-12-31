@@ -1,5 +1,5 @@
-.js-accordion {
-  --rotation: 0;
+.js-accordion__control {
+  --js-accordionControlPseudoElRotation: 0;
   position: relative;
 
   &::after {
@@ -15,18 +15,17 @@
     color: $expand-color;
     top: 0.75rem;
     right: 0.5rem;
-    transform: rotate(var(--rotation));
+    transform: rotate(var(--js-accordionControlPseudoElRotation));
     transition: transform 0.3s;
-  }
-
-  &__item {
-    overflow: hidden;
-    max-height: auto;
-    transition: all 0.3s;
-    transform-origin: top;
   }
 }
 
+.js-accordion__item {
+  overflow: hidden;
+  max-height: auto;
+  transition: all 0.3s;
+  transform-origin: top;
+}
 .is-collapsed {
   max-height: 0;
   transform: scaleY(0);

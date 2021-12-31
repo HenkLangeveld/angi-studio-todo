@@ -21,31 +21,41 @@ footer {
       font-weight: 500;
       margin-bottom: 5px;
     }
+  }
 
-    &__list {
-      margin-bottom: 20px;
+  &__list {
+    margin-bottom: 20px;
+
+    &__item {
+      color: $link-color;
     }
 
-    &__list-item {
-      a {
-        color: $link-color;
-        display: block;
-        padding-block: 0.75rem;
-      }
+    &__link {
+      display: block;
+      padding-block: 0.75rem;
+    }
+  }
+
+  &__sublist {
+    font-size: 0.75rem;
+    border-top: 1px solid $border-color;
+
+    &__title {
+      color: $link-color;
+      background: none;
+      border: none;
+      font-size: inherit;
+      padding-block: 0.75rem;
     }
 
-    &__sublist {
-      font-size: 0.75rem;
-      border-top: 1px solid $border-color;
-    }
-
-    &__sublist-item {
+    &__item {
       margin-left: 1rem;
+    }
 
-      a {
-        padding-block: 0.5rem;
-        color: $sublist-color;
-      }
+    &__link {
+      padding-block: 0.5rem;
+      display: block;
+      color: $sublist-color;
     }
   }
 
