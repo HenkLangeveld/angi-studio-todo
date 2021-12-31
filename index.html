@@ -34,33 +34,16 @@
             class="c-app__form-input"
             type="text"
             placeholder="Your task..."
+            v-model="enteredValue"
           />
-          <button class="o-button c-app__form-button">Add to-do</button>
+          <button class="o-button c-app__form-button" v-on:click="addToDo">
+            Add to-do
+          </button>
         </form>
         <h2 class="c-app__title">Current to-do's</h2>
         <ul class="c-app__list">
-          <li class="c-app__list-item">
-            Reading about Angi studio
-            <input class="c-app__list-item__checkbox" type="checkbox" />
-          </li>
-          <li class="c-app__list-item">
-            Reading about Angi studio
-            <input class="c-app__list-item__checkbox" type="checkbox" />
-          </li>
-          <li class="c-app__list-item">
-            Reading about Angi studio
-            <input class="c-app__list-item__checkbox" type="checkbox" />
-          </li>
-          <li class="c-app__list-item">
-            Reading about Angi studio
-            <input class="c-app__list-item__checkbox" type="checkbox" />
-          </li>
-          <li class="c-app__list-item">
-            Reading about Angi studio
-            <input class="c-app__list-item__checkbox" type="checkbox" />
-          </li>
-          <li class="c-app__list-item">
-            Reading about Angi studio
+          <li class="c-app__list-item" v-for="toDo in toDos">
+            {{ toDo }}
             <input class="c-app__list-item__checkbox" type="checkbox" />
           </li>
         </ul>
@@ -306,6 +289,8 @@
       </footer>
     </div>
     <!-- o-wrapper -->
+    <script src="https://unpkg.com/vue@next"></script>
+    <script src="./app.js"></script>
     <script src="./script.js"></script>
   </body>
 </html>
