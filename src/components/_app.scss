@@ -10,11 +10,19 @@
     display: grid;
     grid-template-columns: 1fr auto;
     align-content: center;
-    column-gap: 1.5rem;
+    column-gap: 0.7rem;
+
+    @media (min-width: $breakpoint-1) {
+      column-gap: 1.5rem;
+    }
   }
 
   &__form {
-    margin: 1rem 0 4rem;
+    margin: 1rem 0 2rem;
+
+    @media (min-width: $breakpoint-1) {
+      margin: 1rem 0 4rem;
+    }
 
     &-input,
     &-button {

@@ -38,7 +38,11 @@ a {
 header,
 main,
 footer {
-  padding-block: 2rem;
+  padding-block: 1rem;
+
+  @media (min-width: $breakpoint-1) {
+    padding-block: 2rem;
+  }
 }
 
 .o-wrapper {
@@ -51,8 +55,11 @@ footer {
   border: 1px solid $primary-color;
   border-radius: 4px;
   color: $text-color--inverted;
-  padding: 14px 32.595px;
-  padding: 0.875rem 2.038rem;
+  padding: 0.875rem 1rem;
+
+  @media (min-width: $breakpoint-1) {
+    padding: 0.875rem 2.038rem;
+  }
 }
 
 .u-text-centered {
