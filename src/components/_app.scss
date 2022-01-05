@@ -60,8 +60,22 @@
     &-item {
       padding-inline: 1rem;
       min-height: 51px;
+      align-items: center;
+
+      &--edit {
+        font-size: inherit;
+        width: 100%;
+        min-height: 51px;
+        border: 2px solid $primary-color;
+        border-radius: 4px;
+        padding: 0 1rem;
+        color: inherit;
+        background-color: inherit;
+      }
 
       &__checkbox {
+        cursor: pointer;
+        position: relative;
         appearance: none;
         width: 1.5rem;
         height: 1.5rem;
@@ -73,7 +87,49 @@
           border: 2px solid $done-color;
           background-color: $done-color--light;
         }
+
+        &::after {
+          content: "\f00c";
+          position: absolute;
+          left: 50%;
+          top: 50%;
+          transform: translate(-50%, -50%);
+          font-family: "Font Awesome 5 Free";
+          font-size: 0.95rem;
+          font-weight: 900;
+          font-style: normal;
+          font-variant: normal;
+          text-rendering: auto;
+          -webkit-font-smoothing: antialiased;
+          opacity: 0;
+          // transition: opacity 3s;
+        }
+
+        &:checked {
+          color: $done-color--light;
+          background-color: $done-color;
+
+          &::after {
+            opacity: 1;
+          }
+        }
       }
     }
+  }
+
+  .isDone {
+    color: $done-color;
+    background-color: $done-color--light;
+  }
+
+  &__has-no-list {
+    margin-top: 0.75rem;
+    border: 1px solid $border-color;
+    border-radius: 4px;
+    padding: 1rem;
+    min-height: 51px;
+    display: flex;
+    align-content: center;
+    color: $text-color--light;
   }
 }

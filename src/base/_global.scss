@@ -35,6 +35,10 @@ a {
   text-decoration: none;
 }
 
+button {
+  cursor: pointer;
+}
+
 header,
 main,
 footer {
@@ -56,9 +60,16 @@ footer {
   border-radius: 4px;
   color: $text-color--inverted;
   padding: 0.875rem 1rem;
+  transition: background-color 0.3s, border-color 0.3s;
 
   @media (min-width: $breakpoint-1) {
     padding: 0.875rem 2.038rem;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: lighten($primary-color, 15%);
+    border-color: lighten($primary-color, 15%);
   }
 }
 
